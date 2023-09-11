@@ -1,0 +1,32 @@
+{
+  "index.qmd": {
+    "index.html": "2f937577"
+  },
+  "about.qmd": {
+    "about.html": "8c9fc91a"
+  },
+  "tutorials.qmd": {
+    "tutorials.html": "48b39ce3"
+  },
+  "tutorials/arrow-obis-2023-09-08/index.qmd": {
+    "index.html": "c8244059"
+  },
+  "packages/python/index.qmd": {
+    "index.html": "2189ae40"
+  },
+  "packages/r/index.qmd": {
+    "index.html": "1fef608b"
+  },
+  "packages.qmd": {
+    "packages.html": "b02ab0cf"
+  },
+  "find-dwc.qmd": {
+    "find-dwc.html": "a4f9ceef"
+  },
+  "find-dwc-files/find-dwc2.qmd": {
+    "find-dwc2.html": "1ded3155"
+  },
+  "find-dwc2.qmd": {
+    "find-dwc2.html": "f0f396b1"
+  }
+}

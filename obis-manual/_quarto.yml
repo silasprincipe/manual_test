@@ -1,0 +1,41 @@
+project:
+  type: book
+  output-dir: ../docs
+
+book:
+  title: "OBIS Manual"
+  navbar: 
+    background: light
+    logo: logo.png
+    logo-alt: "OBIS"
+    search: true
+    left: 
+      - text: "Manual"
+        file: index.qmd
+        # Don't change those lines ####
+      - text: "Tutorials"
+        file: tutorial/tutorials.html
+      - text: "Packages"
+        file: tutorial/packages.html
+      - text: "Find your DwC"
+        file: tutorial/find-dwc.html
+        #########
+  chapters:
+    - index.qmd
+    - part: "Overview"
+      chapters: 
+        - intro.qmd
+        - summary.qmd
+        - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+  pdf:
+    documentclass: scrreprt
+
+
+
