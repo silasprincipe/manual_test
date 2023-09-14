@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: ../docs/tutorial
+  post-render: post-render-tutorial.R
 
 website:
   title: "OBIS Manual" #Don't change this
