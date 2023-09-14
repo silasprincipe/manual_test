@@ -14,11 +14,11 @@ book:
         file: index.qmd
         # Don't change those lines ####
       - text: "Tutorials"
-        file: tutorial/tutorials.html
+        file: tutorials.html
       - text: "Packages"
-        file: tutorial/packages.html
+        file: packages.html
       - text: "Find your DwC"
-        file: tutorial/find-dwc.html
+        file: find-dwc.html
         #########
   chapters:
     - index.qmd

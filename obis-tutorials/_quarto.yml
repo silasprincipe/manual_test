@@ -12,7 +12,7 @@ website:
     left: 
     # Don't change those lines ####
       - text: "Manual"
-        file: ../index.html
+        file: index.html
       - text: "Tutorials"
         file: tutorials.qmd
       - text: "Packages"
