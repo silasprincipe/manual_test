@@ -4,12 +4,33 @@
 #install.packages("quarto")
 library(quarto)
 
-# optional: delete docs to clean
-# fs::dir_delete("docs")
+# Settings:
+remove_old_docs <- FALSE # Clean the docs output before rendering
+render_manual <- TRUE # Render manual?
+preview_manual <- FALSE # Preview manual after rendering
+render_tutorial <- TRUE # Render tutorial?
+preview_tutorial <- FALSE # Preview tutorial after rendering
+remove_old_tutorial <- TRUE # Remove docs/tutorial after copying to docs
+
+if (remove_old_docs) {
+  fs::dir_delete("docs")
+}
 
 # Render each one
-quarto_render("obis-manual/", as_job = F)
-quarto_render("obis-tutorials/", as_job = F)
+if (render_manual) {
+  quarto_render("obis-manual/", as_job = F)
+  if (preview_manual) {
+    quarto_preview("obis-manual")
+  }
+}
+if (render_tutorial) {
+  quarto_render("obis-tutorials/", as_job = F)
+  if (preview_tutorial) {
+    quarto_preview("obis-tutorials")
+  }
+}
 
 # Delete the docs/tutorial folder after post processing script
-fs::dir_delete("docs/tutorial/")
+if (remove_old_tutorial) {
+  fs::dir_delete("docs/tutorial/")
+}

@@ -291,14 +291,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(teleostei)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 2
-  species                 records
-  &lt;chr&gt;                     &lt;int&gt;
-1 Sebastes maliger          41380
-2 Pycnochromis acares        8724
-3 Gymnothorax fimbriatus      857
-4 Monotaxis grandoculis     10961
-5 Ctenochaetus flavicauda    1297
-6 Sargocentron tiere         3687</code></pre>
+  species                records
+  &lt;chr&gt;                    &lt;int&gt;
+1 Halosaurus carinicauda       6
+2 Prognichthys glaphyrae      22
+3 Ogcocephalus nasutus       407
+4 Sebastes constellatus      142
+5 Oxyurichthys lonchotus      41
+6 Malacocottus kincaidi     1772</code></pre>
 </div>
 </div>
 <p>Depending on the filters it may take a few seconds before the data is returned. Note that after all the filters we added <code>collect()</code>, what indicates to <code>Arrow</code> that it should process our request. Several <code>dplyr</code> verbs are available to use with <code>Arrow</code>, a full list can be found <a href="https://arrow.apache.org/docs/dev/r/reference/acero.html">here</a>.</p>
